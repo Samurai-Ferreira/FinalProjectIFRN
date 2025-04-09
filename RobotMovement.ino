@@ -5,60 +5,53 @@ bool r = 0;
 bool l = 0;
 
 void front(){ //anda 1 bloco para frente
-analogWrite(11, 2000);
-digitalWrite(9, 1);
-digitalWrite(8, 0);
-analogWrite(5, 2000);
-digitalWrite(7, 0);
-digitalWrite(6, 1);
-delay(650);
-analogWrite(11, 2000);
-digitalWrite(9, 0);
-digitalWrite(8, 0);
-analogWrite(11, 2000);
-digitalWrite(7, 0);
-digitalWrite(6, 0);
-  
+  analogWrite(11, 2000);
+  digitalWrite(9, 1);
+  digitalWrite(8, 0);
+  analogWrite(5, 2000);
+  digitalWrite(7, 0);
+  digitalWrite(6, 1);
+  delay(650);
+  analogWrite(11, 2000);
+  digitalWrite(9, 0);
+  digitalWrite(8, 0);
+  analogWrite(11, 2000);
+  digitalWrite(7, 0);
+  digitalWrite(6, 0);    
 }
 
 void rotL(){ //rotaciona para esquerda
-
-analogWrite(11, 2000);
-digitalWrite(9, 1);
-digitalWrite(8, 0);
-analogWrite(5, 2000);
-digitalWrite(7, 1);
-digitalWrite(6, 0);
-delay(500);
-analogWrite(11, 2000);
-digitalWrite(9, 0);
-digitalWrite(8, 0);
-analogWrite(11, 2000);
-digitalWrite(7, 0);
-digitalWrite(6, 0);
-  
+  analogWrite(11, 2000);
+  digitalWrite(9, 1);
+  digitalWrite(8, 0);
+  analogWrite(5, 2000);
+  digitalWrite(7, 1);
+  digitalWrite(6, 0);
+  delay(500);
+  analogWrite(11, 2000);
+  digitalWrite(9, 0);
+  digitalWrite(8, 0);
+  analogWrite(11, 2000);
+  digitalWrite(7, 0);
+  digitalWrite(6, 0);  
 }
 
 void rotR(){ //rotaciona para direita
-
-analogWrite(11, 2000);
-digitalWrite(9, 0);
-digitalWrite(8, 1);
-analogWrite(5, 2000);
-digitalWrite(7, 0);
-digitalWrite(6, 1);
-delay(500);
-analogWrite(11, 2000);
-digitalWrite(9, 0);
-digitalWrite(8, 0);
-analogWrite(11, 2000);
-digitalWrite(7, 0);
-digitalWrite(6, 0);
-  
+  analogWrite(11, 2000);
+  digitalWrite(9, 0);
+  digitalWrite(8, 1);
+  analogWrite(5, 2000);
+  digitalWrite(7, 0);
+  digitalWrite(6, 1);
+  delay(500);
+  analogWrite(11, 2000);
+  digitalWrite(9, 0);
+  digitalWrite(8, 0);
+  analogWrite(11, 2000);
+  digitalWrite(7, 0);
+  digitalWrite(6, 0); 
 }
-void up(){ //comando de ir para cima
-
- 
+void up(){ //comando de ir para cima 
   if(u){ //se já estiver indo para cima
     front();//vá para frente
     u = 1; //agora estarás indo para cima
@@ -127,9 +120,9 @@ void right(){
   analogWrite(11, 200);
   digitalWrite(9, 1);
   digitalWrite(8, 0);
-   analogWrite(5, 200);
-   digitalWrite(7, 0);
-   digitalWrite(6, 1);
+  analogWrite(5, 200);
+  digitalWrite(7, 0);
+  digitalWrite(6, 1);
   delay(800);
   analogWrite(11, 2000);
   digitalWrite(9, 0);
@@ -156,7 +149,6 @@ void setup() {
   Serial.begin(115200);//Python com a mesma boundrate
 
 }
-
 void loop(){
 
   delay(10000) //espera 10 segundos para colocação no chão
