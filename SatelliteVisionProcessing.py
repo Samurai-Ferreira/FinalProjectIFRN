@@ -226,7 +226,7 @@ def get_clicked_pos(pos, rows, width): # identifica qual node clicado
 
 #------------------------------------------------------------------------------------------------------------------
 
-	
+#Mecanismo de processamento de informações visuais para Arduino.
 def moves(end):
 	robot.reverse() #Inverte a lista
 	for i in range(0, len(robot)): #Analisa cada quadrado na lista
